@@ -1,0 +1,11 @@
+.about {
+  background-image: url("../../../react-img.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  color: #fff;
+  font-size: 100px;
+  justify-content: center;
+  align-items: center;
+}
