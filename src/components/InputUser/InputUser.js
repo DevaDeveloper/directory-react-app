@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./InputUser.module.css";
+import { v4 as uuid } from "uuid";
 
 const InputUser = (props) => {
   const [enteredUsername, setEnteredUsername] = useState("");
@@ -35,7 +36,7 @@ const InputUser = (props) => {
       lastname: enteredLastname,
       email: enteredEmail,
       number: enteredNumber,
-      id: Math.random().toString(),
+      id: uuid(),
     };
     console.log(fullUser);
     props.onAddUser(fullUser);
