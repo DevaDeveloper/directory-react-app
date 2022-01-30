@@ -22,6 +22,7 @@ const ErrorModal = (props) => {
               id="username"
               name="username"
               placeholder="Ime"
+              required
               value={props.enteredUsername}
               onChange={(e) =>
                 props.setUpdateUsername(e.target.value, props.id)
@@ -34,6 +35,7 @@ const ErrorModal = (props) => {
               type="text"
               id="userlastname"
               name="userlastname"
+              required
               placeholder="Prezime"
               value={props.enteredLastname}
               onChange={(e) =>
@@ -48,6 +50,7 @@ const ErrorModal = (props) => {
               id="email"
               name="email"
               placeholder="Email"
+              required
               value={props.enteredEmail}
               onChange={(e) => props.setUpdateEmail(e.target.value, props.id)}
             />
@@ -59,6 +62,7 @@ const ErrorModal = (props) => {
               id="phone"
               name="phone"
               placeholder="Broj Telefona"
+              required
               value={props.enteredNumber}
               onChange={(e) => props.setUpdateNumber(e.target.value, props.id)}
             />

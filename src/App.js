@@ -7,37 +7,6 @@ import Navbar from "./components/Navbar/Navbar";
 import { Switch, Route } from "react-router-dom";
 import About from "./components/Pages/About";
 
-// const DUMMY_DATA = [
-//   {
-//     username: "Marko",
-//     lastname: "Markovic",
-//     email: "markom@gmail.com",
-//     number: 6612345678,
-//     id: Math.random().toString(),
-//   },
-//   {
-//     username: "Marko",
-//     lastname: "Markovic",
-//     email: "markom@gmail.com",
-//     number: 669876543,
-//     id: Math.random().toString(),
-//   },
-//   {
-//     username: "Marko",
-//     lastname: "Markovic",
-//     email: "markom@gmail.com",
-//     number: 669876543,
-//     id: Math.random().toString(),
-//   },
-//   {
-//     username: "Marko",
-//     lastname: "Markovic",
-//     email: "markom@gmail.com",
-//     number: 669876543,
-//     id: Math.random().toString(),
-//   },
-// ];
-
 function App() {
   const [userList, setUserList] = useState([]);
   const [enableAdd, setEnableAdd] = useState(false);
@@ -64,7 +33,7 @@ function App() {
           lastname: fullUser.lastname,
           email: fullUser.email,
           number: fullUser.number,
-          id: Math.random(),
+          id: fullUser.id,
         },
       ];
     });
@@ -118,7 +87,6 @@ function App() {
       })
     );
   };
-  console.log(userList);
   const startAddHandler = () => {
     setEnableAdd(true);
   };
