@@ -6,6 +6,7 @@ import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import { Switch, Route } from "react-router-dom";
 import About from "./components/Pages/About";
+import Contact from "./components/Pages/Contact";
 
 function App() {
   const [userList, setUserList] = useState([]);
@@ -125,6 +126,9 @@ function App() {
         </Route>
         <Route path="/o-nama">
           <About />
+        </Route>
+        <Route path="/contact">
+          <Contact />
         </Route>
       </Switch>
     </>
