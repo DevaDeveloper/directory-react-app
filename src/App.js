@@ -88,7 +88,6 @@ function App() {
       })
     );
   };
-  console.log(userList);
   const startAddHandler = () => {
     setEnableAdd(true);
   };
