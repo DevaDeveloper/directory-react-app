@@ -18,7 +18,9 @@ const Navbar = () => {
             <NavLink to="/o-nama">O nama</NavLink>
           </li>
           <li>
-            <button className={styles.button}>Kontakt</button>
+            <button className={styles.button}>
+              <Navbar to="/contact">Kontakt</Navbar>
+            </button>
           </li>
         </ul>
       </navbar>
