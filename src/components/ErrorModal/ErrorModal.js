@@ -1,15 +1,27 @@
 import React from "react";
 import styles from "./ErrorModal.module.css";
+import ReactDOM from "react-dom";
 
 const ErrorModal = (props) => {
   const formSubmitHandler = (event) => {
     event.preventDefault();
     props.stopEditing();
   };
+  const Backdrop = (props) => {
+    return (
+      <div
+        onClick={() => props.stopEditing()}
+        className={styles.backdrop}
+      ></div>
+    );
+  };
 
   return (
     <>
-      <div onClick={() => props.stopEditing()} className={styles.backdrop} />
+      {ReactDOM.createPortal(
+        <Backdrop stopEditing={props.stopEditing} />,
+        document.getElementById("root-backdrop")
+      )}
       <div className={styles.errorModal}>
         <div>
           <h3>Uredi korisnika</h3>
