@@ -5,9 +5,11 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className={styles.navHolder}>
-      <navbar className={styles.navbar}>
+      <nav className={styles.navbar}>
         <div className={styles.logo}>
-          <div>Logo</div>
+          <div>
+            <i className="far fa-address-book"></i>
+          </div>
           <h3>Dashboard</h3>
         </div>
         <ul className={styles.links}>
@@ -23,7 +25,7 @@ const Navbar = () => {
             </NavLink>
           </li>
         </ul>
-      </navbar>
+      </nav>
     </div>
   );
 };

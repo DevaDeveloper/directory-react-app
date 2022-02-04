@@ -46,6 +46,22 @@
   background: #2b9ed0;
 }
 
+.modalExit {
+  display: flex;
+  justify-content: space-between;
+}
+.modalExit button {
+  background: transparent;
+  border: 1px solid transparent;
+  font-size: 20px;
+  padding: 0 3px;
+}
+.modalExit button:hover {
+  cursor: pointer;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
 @media (max-width: 767px) {
   .input input {
     max-width: 200px;

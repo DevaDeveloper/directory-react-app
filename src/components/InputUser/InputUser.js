@@ -10,22 +10,18 @@ const InputUser = (props) => {
 
   const usernameHandler = (event) => {
     setEnteredUsername(event.target.value);
-    console.log(event.target.value);
   };
 
   const lastnameHandler = (event) => {
     setEnteredLastname(event.target.value);
-    console.log(event.target.value);
   };
 
   const emailHandler = (event) => {
     setEnteredEmail(event.target.value);
-    console.log(event.target.value);
   };
 
   const numberHandler = (event) => {
     setEnteredNumber(event.target.value);
-    console.log(event.target.value);
   };
 
   const submitHandler = (event) => {

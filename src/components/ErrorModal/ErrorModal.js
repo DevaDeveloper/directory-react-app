@@ -23,8 +23,9 @@ const ErrorModal = (props) => {
         document.getElementById("root-backdrop")
       )}
       <div className={styles.errorModal}>
-        <div>
+        <div className={styles.modalExit}>
           <h3>Uredi korisnika</h3>
+          <button onClick={() => props.stopEditing()}>X</button>
         </div>
         <form onSubmit={formSubmitHandler}>
           <div className={styles.input}>

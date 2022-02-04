@@ -5,7 +5,7 @@ const Header = (props) => {
   return (
     <div className={styles.header}>
       <div className={styles.headerLogo}>
-        <i class="fas fa-bars"></i>
+        <i className="fas fa-bars"></i>
         <h3>Kontakti</h3>
       </div>
       <button className={styles.headerBtn} onClick={() => props.startAdd()}>

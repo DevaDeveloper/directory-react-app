@@ -37,13 +37,13 @@ const User = (props) => {
         <div className={styles.number}>{props.number}</div>
         <div className={styles.two_actions}>
           <button className={styles.first_btn} onClick={startEditHandler}>
-            <i class="fas fa-pen"></i>
+            <i className="fas fa-pen"></i>
           </button>
           <button
             onClick={() => props.deleteHandlerProps(props.id)}
             className={styles.second_btn}
           >
-            <i class="fas fa-trash"></i>
+            <i className="fas fa-trash"></i>
           </button>
         </div>
       </li>

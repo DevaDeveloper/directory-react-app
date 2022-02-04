@@ -1,9 +1,13 @@
 import React from "react";
 import styles from "./About.module.css";
+import backgroundImg from "../../react-img.jpeg";
 
 const About = () => {
   return (
-    <div className={styles.about}>
+    <div
+      className={styles.about}
+      style={{ backgroundImage: `url(${backgroundImg})` }}
+    >
       <h2>O NAMA</h2>
       <div>
         <p className={styles.opisAp}>
